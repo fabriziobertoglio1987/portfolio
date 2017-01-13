@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-	def welcome
-		
+	def welcome		
+	end
+	def secondAction
 	end
 end
