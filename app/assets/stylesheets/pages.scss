@@ -44,8 +44,6 @@ body {
   color: #FCFFFD;
 }
 
-
-
 /* Video Header */
 
 .header {
@@ -53,9 +51,20 @@ body {
   height: 650px;
   border-left: none;
   border-right: none;
+  margin-top: -20px;
+}
+
+
+.header-video {
   position: relative;
   padding: 20px;
-  margin-top: -75px;
+  margin-top: -70px;
+}
+
+.header.portfolio {
+  background-image: url("https://s3.eu-central-1.amazonaws.com/portfoliofabrizio/wood.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
 #video-container {
@@ -70,7 +79,7 @@ body {
 video {
   position: absolute;
   z-index: -3;
-  width: 1900px;
+  width: 1950px;
  /* height: 550px;*/
   margin-top: -450px;
 }
@@ -79,15 +88,19 @@ video {
   height: 100%;
 }
 
-.header h1 {
+h1 {
   position: relative;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   text-align: center;
   color: #FCFFFD;
   /*font-size: 85px;*/
   font-size: 7vw;
   font-weight: bold;
+}
+
+.header .portfolioHeader {
+  font-size: 6vw;
 }
 
 .header button {
@@ -181,7 +194,11 @@ video {
   
   .header h1 {
     font-size: 63px;
-    top: 35%;
+    top: 50%;
+  }
+
+  .header .portfolioHeader {
+    font-size: 5vw;
   }
 
   .header button {
@@ -263,7 +280,7 @@ video {
   }
 
   .header h1 {
-    font-size: 28px;
+    font-size: 4vw;
     top: 42%;
     width: 360px;
     padding-left: 18px;

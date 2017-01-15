@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
+	layout 'application'
 	def welcome		
 	end
-	def secondAction
+	def portfolio
 	end
 end
