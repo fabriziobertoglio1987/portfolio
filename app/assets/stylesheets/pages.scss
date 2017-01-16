@@ -133,6 +133,7 @@ h1 {
   /*background-image: url("/assets/wood.jpg");*/
   height: 100%;
   background-size: cover;
+  margin-top: 50px;
 }
 
 .main h2 {
@@ -166,6 +167,41 @@ h1 {
     z-index: -1;
 }
 
+.my-slider {
+  max-width: 1164px;
+}
+.my-slider img {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 3px black;
+}
+
+.unslider-arrow.next{
+  position: relative;
+  float: right;
+  right: 0px;
+  top: 50%;
+  transform: translateX(-50%);    
+}
+
+#setup .unslider-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+
+.unslider-arrow.prev{
+
+}
+
+/* Supporting */
+
+.supporting img {
+  width: 100%;
+  margin-top: 50px;
+}
 
 /* Jumbotron */
 

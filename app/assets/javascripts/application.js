@@ -15,6 +15,15 @@
 //= require turbolinks
 //= require_tree .
 //= require unslider
-jQuery(document).ready(function($) {
-	$('.my-slider').unslider();
-});
+
+$(function () {
+     $('.banner').unslider({
+
+         speed: 2000,
+         delay: 2000,
+         fluid: true,
+         dots: true,
+         arrows: true,
+         pause: true
+     });
+ });
