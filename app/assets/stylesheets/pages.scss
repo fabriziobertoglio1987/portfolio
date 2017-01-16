@@ -90,7 +90,7 @@ video {
 
 h1 {
   position: relative;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   text-align: center;
   color: #FCFFFD;
@@ -100,12 +100,12 @@ h1 {
 }
 
 .header .portfolioHeader {
-  font-size: 6vw;
+  top: 50%
 }
 
 .header button {
   position: relative;
-  top: 40%;
+  top: 35%;
   transform: translateY(-50%);
   left: 50%;
   transform: translateX(-50%);
@@ -133,6 +133,10 @@ h1 {
   /*background-image: url("/assets/wood.jpg");*/
   height: 100%;
   background-size: cover;
+  margin-top: 200px;
+}
+
+.main.welcome {
   margin-top: 50px;
 }
 
@@ -167,15 +171,30 @@ h1 {
     z-index: -1;
 }
 
+.container.slider {
+    background-image: url('');
+    background-size: cover;
+}
+
 .my-slider {
   max-width: 1164px;
 }
 .my-slider img {
-  width: 70%;
+  width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   border: solid 3px black;
+}
+
+.unslider-arrow {
+  display: none;
+  height: 0px;
+}
+
+.unslider-nav {
+  display: none;
+  height: 0px;
 }
 
 .unslider-arrow.next{
@@ -186,21 +205,27 @@ h1 {
   transform: translateX(-50%);    
 }
 
-#setup .unslider-arrow {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-}
-
-.unslider-arrow.prev{
-
-}
 
 /* Supporting */
 
+.supporting {
+  background-image: url('https://s3.eu-central-1.amazonaws.com/portfoliofabrizio/murales.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 200px;  
+}
+
+.supporting .container, .supporting .container .row, .supporting .container .col-md-4 {
+  height: 100%;
+}
+
 .supporting img {
   width: 100%;
-  margin-top: 50px;
+  padding: 0 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);  
 }
 
 /* Jumbotron */

@@ -17,13 +17,11 @@
 //= require unslider
 
 $(function () {
-     $('.banner').unslider({
-
-         speed: 2000,
-         delay: 2000,
-         fluid: true,
-         dots: true,
-         arrows: true,
-         pause: true
+     $('.my-slider').unslider({
+         dots: false,
+         arrows: false,
+         autoplay: true,
+         delay: 2500,
+         infinite: true	
      });
  });
