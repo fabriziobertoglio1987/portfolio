@@ -80,7 +80,6 @@ video {
   position: absolute;
   z-index: -3;
   width: 1950px;
- /* height: 550px;*/
   margin-top: -450px;
 }
 
@@ -238,6 +237,22 @@ h1 {
 
 /* Media Queries delete everything that does not change */
 
+@media (min-width: 1950px) {
+  video {
+    width: 100%;
+  }
+  .header-video {
+    height: 1500px;
+    margin-top: -250px;
+  }
+  h1 {
+    top: 50%;
+  }
+  .header button {
+    top: 50%;
+  }
+}
+
 @media (max-width: 1500px) {
   video {
     width: 1500px;
@@ -274,6 +289,13 @@ h1 {
   .main .crop {
     display: none;
   }
+  .main {
+    margin-top: 100px;
+  }
+  .supporting {
+    margin-top: 100px;
+    height: 400px;  
+  }  
 }
 
 @media (max-width: 820px) {
@@ -335,6 +357,13 @@ h1 {
   height: 270px;
   width: 100%;
   }
+  .main {
+    margin-top: 50px;
+  }
+  .supporting {
+    margin-top: 50px;
+    height: 100px;  
+  } 
 
   video {
   width: 360px;
@@ -350,6 +379,7 @@ h1 {
   .main h2 {
     font-size: 4vw;
   }
+ 
 }
 
 

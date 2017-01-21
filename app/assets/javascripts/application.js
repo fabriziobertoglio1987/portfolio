@@ -15,13 +15,15 @@
 //= require turbolinks
 //= require_tree .
 //= require unslider
-
-$(function () {
-     $('.my-slider').unslider({
-         dots: false,
-         arrows: false,
-         autoplay: true,
-         delay: 2500,
-         infinite: true	
-     });
- });
+//= require application
+	
+jQuery(document).ready(function($) {
+	$('.my-slider').unslider({
+		dots: false,
+        arrows: false,
+        autoplay: true,
+        delay: 3500,
+        speed: 1200,
+        infinite: true
+    	});
+});
