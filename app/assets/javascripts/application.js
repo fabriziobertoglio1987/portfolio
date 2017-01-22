@@ -17,7 +17,7 @@
 //= require unslider
 //= require application
 	
-jQuery(document).ready(function($) {
+/*jQuery(document).ready(function($) {
 	$('.my-slider').unslider({
 		dots: false,
         arrows: false,
@@ -26,4 +26,4 @@ jQuery(document).ready(function($) {
         speed: 1200,
         infinite: true
     	});
-});
+});*/

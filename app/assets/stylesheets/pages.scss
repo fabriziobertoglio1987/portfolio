@@ -51,7 +51,7 @@ body {
   height: 650px;
   border-left: none;
   border-right: none;
-  margin-top: -20px;
+  margin-top: 0px; /*correction made*/
 }
 
 
@@ -98,9 +98,9 @@ h1 {
   font-weight: bold;
 }
 
-.header .portfolioHeader {
+/*.header .portfolioHeader {
   top: 50%
-}
+}*/
 
 .header button {
   position: relative;
@@ -212,7 +212,11 @@ h1 {
   background-size: cover;
   background-position: center;
   height: 600px;
-  margin-top: 200px;  
+  margin: 200px 100px;  
+}
+
+.supporting .container {
+
 }
 
 .supporting .container, .supporting .container .row, .supporting .container .col-md-4 {
@@ -268,7 +272,7 @@ h1 {
     width: 1250px;
   }
   
-  .header h1 {
+  .header-video h1 {
     font-size: 63px;
     top: 50%;
   }

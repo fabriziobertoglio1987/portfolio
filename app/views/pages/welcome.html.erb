@@ -1,3 +1,5 @@
+<!-- VIDEO HEADER -->
+<!-- 1 Convert the video in compatible formats -->
 <!-- NAVIGATION BAR -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -15,7 +17,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Home", controller: "pages", action: "welcome" %></li>
+        <li><%= link_to "Home", action: "welcome" %></li>
         <li><%= link_to "Portfolio", action: "portfolio" %></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
@@ -23,42 +25,26 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<!-- VIDEO HEADER -->
-<!-- 1 Convert the video in compatible formats -->
 <div class="header header-video">
-    <div id="video-container">
+
+  <div id="video-container">   
+      <%= video_tag "Islands.mp4", autoplay: true, loop: true, muted: true %>
      
-        <%= video_tag "Islands.mp4", autoplay: true, loop: true, muted: true %>
-        <!-- <video autoplay loop mute><source src= "/assets/Islands.mp4" type = "video/mp4"></video>-->
-       
-      <div class="row">
-        <h1> Welcome to my Website </h1>
-        <button>View my Work</button>
-      </div>
+    <div class="row">
+      <h1> Welcome to my Website </h1>
+      <button>View my Work</button>
     </div>
+  </div>
 </div>
 
 <!-- Video Protrait and Text -->
 <div class="main welcome">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <div class="crop">
-          <%= video_tag"my video.mp4", autoplay: true, loop: true, muted: true %>
-          <!--<video autoplay loop muted>
-            <source src="assets/my video.mp4" %> type ="video/mp4">
-          </video>-->
-        </div>
-      </div>
-      <div class="col-md-9">
-        <h2>Hello, my name is Fabrizio Bertoglio and I am a Full-stack Webdeveloper. I mainly work with <span> Ruby on Rails</span>,<span> SQL</span>,<span> Linux</span>,<span> AngularJs</span>,<span> jQuery</span>,<span> Javascript</span>,<span> CSS3</span> and <span> HTML5</span>.
-        I also speak English, Italian, German and Spanish.</h2>
-      </div>
-    </div> 
-    <div class="row">
       <div class="col-md-12">
-        <h2>This is my personal Website, it does not include much content, but I will update it with all my new Projects and Apps.</h2>
+        <h2>Hello, my name is Fabrizio Bertoglio and I am a Full-stack Webdeveloper. I mainly work with <span> Ruby on Rails</span>,<span> SQL</span>,<span> Linux</span>,<span> AngularJs</span>,<span> jQuery</span>,<span> Javascript</span>,<span> CSS3</span> and <span> HTML5</span>.
+        I also speak English, Italian, German and Spanish.</br>
+        This is my personal Website, it does not include much content, but I will update it with all my new Projects and Apps.</h2>
       </div>
     </div>
   </div>
