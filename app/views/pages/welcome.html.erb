@@ -6,11 +6,11 @@
 <div class="header header-video">
 
   <div id="video-container">   
-      <%= video_tag "Islands.mp4", autoplay: true, loop: true, muted: true %>
+      <%= video_tag "Islands.mp4", autoplay: true, loop: true, muted: true, poster: "Islands.png" %>
      
-    <div class="row">
-      <h1> Welcome to my Website </h1>
-      <button>View my Work</button>
+    <div class="centered">
+      <h1> Bartering Apps </h1>      
+      <%= link_to "View my Work", { action: "portfolio" }, class: "button" %>
     </div>
   </div>
 </div>
@@ -20,9 +20,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>Hello, my name is Fabrizio Bertoglio and I am a Full-stack Webdeveloper. I mainly work with <span> Ruby on Rails</span>,<span> SQL</span>,<span> Linux</span>,<span> AngularJs</span>,<span> jQuery</span>,<span> Javascript</span>,<span> CSS3</span> and <span> HTML5</span>.
-        I also speak English, Italian, German and Spanish.</br>
-        This is my personal Website, it does not include much content, but I will update it with all my new Projects and Apps.</h2>
+        <h2>Do you have a <span>good idea</span>, but do not have the <span>coding skills</span> and the <span>financial resources</span> to realize it?</br>Would you like me to develope your <span>Application</span> for free?</br> I <span>travel</span> the <span>World</span> helping other people realize their own Ideas in the form of <span>responsive Application</span> available for Desktop, Table and Mobile, based on a powerful <span>Ruby on Rails</span> Architecture and with the possibility to realizy any of your wishes and those of your Customers!</br>I develope Applications in exchange of your Hospitality and the coverage of my Travel Expenses.</h2>
       </div>
     </div>
   </div>
