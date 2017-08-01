@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
-//= require unslider
 //= require application
 	
 /*jQuery(document).ready(function($) {
