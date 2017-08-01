@@ -14,14 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require application
-	
-/*jQuery(document).ready(function($) {
-	$('.my-slider').unslider({
-		dots: false,
-        arrows: false,
-        autoplay: true,
-        delay: 3500,
-        speed: 1200,
-        infinite: true
-    	});
-});*/
+//= require applicationscript
