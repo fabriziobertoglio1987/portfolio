@@ -1,21 +1,7 @@
-
-function changeNavbarColor() {
-
-    var url = window.location.pathname; 
-        urlRegExp = new RegExp(url.replace(/\/$/,'')); 
-        console.log(urlRegExp);
-    
-    // now grab every link from the navigation
-    /*    $('.sidebar a').each(function(){
-            // and test its href against the url pathname regexp
-            if(urlRegExp.test(this.href)){
-                $(this).parents('li').addClass('active');
-            }
-        });*/
-
-    /* GET companies#index show Print Settings */
-    /*if (urlRegExp.test(/\/companies/)) {
-        $('#runForm').hide();
-    }*/
-
-}
+$(function() {
+    $("#leftDescription").hover(function(){
+        $("#leftDesc").dequeue().stop(false, true).show("blind", "slow");
+    }, function(){
+        $('#leftDesc').dequeue().stop(false, true).hide("blind", "slow");
+        });
+});

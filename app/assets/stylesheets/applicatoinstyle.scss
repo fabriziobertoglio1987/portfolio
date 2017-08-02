@@ -66,14 +66,28 @@
 }
 
 .container-links {
-	margin-top: 15px	;
+	margin-top: 15px;
 }
 
 /* USED ONLY IN THIS PROJECT */
+
+/* changing color to the navbar */
+
+.initial-background {
+	background: initial;
+	border: initial;
+}
 
 @media (max-width: 780px) {
 	ul.nav.navbar-nav {
 	width: 100%;
 	text-align: center;
+	}
+}
+
+@media (max-width: 740px) {
+	.black-navbar {
+		background: initial;
+		border: initial;
 	}
 }

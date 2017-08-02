@@ -1,45 +1,62 @@
 /* EXECUTION OF THE FUNCTIONS */
 
 var ready = function(){
-	scrollToParagraph();
+	switch (url()) {
+		case "/":
+		case "/pages":
+			scrollToParagraph("#portfolio");
+			navBarColor(false);			
+			break;
+		case "/blog":
+			navBarColor(true);
+			break;
+	}
+
+	$('#circleArrow').hover(function(){
+		$(this).effect("bounce", {times: 3}, 2000);
+		$(this).click(function(){
+			scrollToParagraph(".header.header-video");
+		});
+	});
 }
 
+var visit = function() {
+
+}
 
 /* FUNCTIONS */
 
-function scrollToParagraph() {
+function scrollToParagraph(target) {
 	$('html, body').animate({scrollTop:0}, 'slow');
-	position = $('#portfolio').offset();
+	position = $(target).offset();
 	top_position = parseInt(position["top"]);
 	$('.portfoliobutton').click(function(e){
 		e.preventDefault();
-		/*window.scrollTo(0, top_position);*/
 		$('html, body').animate({scrollTop: top_position}, 'slow');
 	});
 }
 
+function navBarColor(condition) {
+	if (condition) {
+		$('.navbar-nav, .navbar, .header .button').addClass("initial-background");
+		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "black");
+	} else {
+		$('.navbar-nav, .navbar, .header .button').removeClass("initial-background");
+		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "#FCFFFD");
+	}
+}
 
-function changeNavbarColor() {
 
-    var url = window.location.pathname; 
-        urlRegExp = new RegExp(url.replace(/\/$/,'')); 
-        console.log(urlRegExp);
-    
-    // now grab every link from the navigation
-    /*    $('.sidebar a').each(function(){
-            // and test its href against the url pathname regexp
-            if(urlRegExp.test(this.href)){
-                $(this).parents('li').addClass('active');
-            }
-        });*/
+function url() {
+    address = window.location.pathname; 
+    return address;
+}
 
-    /* GET companies#index show Print Settings */
-    /*if (urlRegExp.test(/\/companies/)) {
-        $('#runForm').hide();
-    }*/
-
+function animateLink(target) {
+	target.effect("bounce", "slow");
 }
 
 /* DOCUMENT READY CALL*/
 
 $(document).on("turbolinks:load", ready);
+$(document).on("turbolinks:visit", visit);

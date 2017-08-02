@@ -1,3 +1,5 @@
+write javascript in applicationscript.js at row 7 to get the window.width and based on that width you need to make the navbar black
+
 created post in the blog, use the url from the js of socialnetwork to change the navbar colors so that they are visible
 
 start new project with rspec

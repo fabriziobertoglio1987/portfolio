@@ -26,12 +26,12 @@ body {
 
 .navbar-nav {
   float: right;
-  background: transparent;
+  background: transparent; 
 }
 
 .navbar {
   background: transparent;
-  border: transparent;
+  border: transparent; 
   z-index: +1;
 }
 
