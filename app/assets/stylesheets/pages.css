@@ -301,8 +301,8 @@ h1 {
     width: 100%;
   }
   .header-video {
-    height: 1500px;
-    margin-top: -250px;
+    height: 700px; /*1500px*/
+    margin-top: 0px;
   }
   /*h1 {
     top: 50%;
@@ -354,9 +354,7 @@ h1 {
   .main .crop {
     display: none;
   }
-  /*.main {
-    margin-top: 100px;
-  }*/
+
   .supporting {
     margin-top: 100px;
     height: 400px;  
@@ -366,8 +364,6 @@ h1 {
 @media (max-width: 820px) {
   .navbar {
   background: white;
-  /*overflow: auto;
-  margin-bottom: 0px;*/
   }
 
   .navbar-nav {

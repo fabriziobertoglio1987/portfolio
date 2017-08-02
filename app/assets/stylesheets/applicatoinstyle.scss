@@ -1,3 +1,5 @@
+/* USED IN ALL PROJECTS */
+
 /* Shortcuts */
 
 .flex-box {
@@ -67,3 +69,11 @@
 	margin-top: 15px	;
 }
 
+/* USED ONLY IN THIS PROJECT */
+
+@media (max-width: 780px) {
+	ul.nav.navbar-nav {
+	width: 100%;
+	text-align: center;
+	}
+}
