@@ -5,7 +5,7 @@ var ready = function(){
 		case "/":
 		case "/pages":
 			scrollToParagraph("#portfolio");
-			navBarColor(false);			
+			if (window.innerWidth > 760) { navBarColor(false); } else { navBarColor(true); }
 			break;
 		case "/blog":
 			navBarColor(true);
