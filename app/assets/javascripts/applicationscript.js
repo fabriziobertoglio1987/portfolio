@@ -4,7 +4,11 @@ var ready = function(){
 	switch (url()) {
 		case "/":
 		case "/pages":
-			scrollToParagraph("#portfolio");
+		case "/#":
+			$('.animation').click(function(e){
+				e.preventDefault();
+				findParagraph(this);
+			});
 			if (window.innerWidth > 760) { navBarColor(false); } else { navBarColor(true); }
 			break;
 		case "/blog":
@@ -14,9 +18,9 @@ var ready = function(){
 
 	$('#circleArrow').hover(function(){
 		$(this).effect("bounce", {times: 3}, 2000);
-		$(this).click(function(){
-			scrollToParagraph(".header.header-video");
-		});
+		/*$(this).click(function(){
+			scrollToParagraph(".header.header-video", ".navbar.navbar-default");
+		});*/
 	});
 }
 
@@ -26,14 +30,30 @@ var visit = function() {
 
 /* FUNCTIONS */
 
+function findParagraph(input) {
+	/*console.log(input)*/
+	animation = $('.animation'); 
+	switch(input) {
+		case animation[0]:
+		case animation[1]:
+			scrollToParagraph('#portfolio')
+		break
+		case $('.center.animation')[0]:
+			scrollToParagraph('.navbar.navbar-default')
+		break
+	}
+}
+
 function scrollToParagraph(target) {
-	$('html, body').animate({scrollTop:0}, 'slow');
+	/*parameters = [[".button.animation", ""],[".portfoliobutton", "#portfolio"],["#circleArrow", ".navbar.navbar-default"]];
+	for (i = 0; i < array.length;  i++) {}*/
 	position = $(target).offset();
 	top_position = parseInt(position["top"]);
-	$('.portfoliobutton').click(function(e){
+	$('html, body').animate({scrollTop: top_position}, 'slow');
+	/*$(parameters[i][0]).click(function(e){
 		e.preventDefault();
 		$('html, body').animate({scrollTop: top_position}, 'slow');
-	});
+	});		*/
 }
 
 function navBarColor(condition) {
