@@ -15,7 +15,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", pages_path(), id: "home" %></li>
-        <li><%= link_to "Portfolio", '#', {class: "animation portfolio" } %></li>
+        <% if action_name == "index" %>
+          <li><%= link_to "Portfolio", '#', {class: "animation portfolio" } %></li>
+        <% else %>
+          <li><%= link_to "Portfolio", pages_path(), {class: "animation portfolio" } %></li>
+        <% end %>
         <li><a href="#">Contact</a></li>
         <li><%= link_to "Blog", blog_path() %></li>
       </ul>      
