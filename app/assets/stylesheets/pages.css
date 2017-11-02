@@ -296,20 +296,19 @@ h1 {
 
 /* Media Queries delete everything that does not change */
 
-@media (min-width: 1950px) {
+@media (min-width: 1920px) {
   video {
     width: 100%;
   }
   .header-video {
-    height: 700px; /*1500px*/
+    height: 700px; 
     margin-top: 0px;
   }
-  /*h1 {
-    top: 50%;
+
+  .navbar {
+    margin-bottom: -50px;
   }
-  .header .button {
-    top: 50%;
-  }*/
+
 }
 
 @media (min-width: 1600px) {
