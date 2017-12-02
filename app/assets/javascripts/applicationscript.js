@@ -39,21 +39,20 @@ function findParagraph(input) {
 			scrollToParagraph('#portfolio')
 		break
 		case $('.center.animation')[0]:
-			scrollToParagraph('.navbar.navbar-default')
+			/*scrollToParagraph('.navbar.navbar-default')*/
+			scrollToParagraph('.header.header-video')
 		break
 	}
 }
 
 function scrollToParagraph(target) {
-	/*parameters = [[".button.animation", ""],[".portfoliobutton", "#portfolio"],["#circleArrow", ".navbar.navbar-default"]];
-	for (i = 0; i < array.length;  i++) {}*/
 	position = $(target).offset();
-	top_position = parseInt(position["top"]);
+	top_position = parseInt(position["top"]) - 20;
 	$('html, body').animate({scrollTop: top_position}, 'slow');
-	/*$(parameters[i][0]).click(function(e){
-		e.preventDefault();
-		$('html, body').animate({scrollTop: top_position}, 'slow');
-	});		*/
+	height = document.getElementById("bs-example-navbar-collapse-1").style.height
+	if (target == '#portfolio' && height != "1px") {
+		$("#bs-example-navbar-collapse-1").style("height: 1px");
+	}
 }
 
 function navBarColor(condition) {
@@ -62,7 +61,7 @@ function navBarColor(condition) {
 		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "black");
 	} else {
 		$('.navbar-nav, .navbar, .header .button').removeClass("initial-background");
-		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "#FCFFFD");
+		/*$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "#FCFFFD");*/
 	}
 }
 

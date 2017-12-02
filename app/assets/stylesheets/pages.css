@@ -13,7 +13,7 @@ h1 span, p span {
   text-justify: inter-word;  
 }
 
-header.header-video h1 {
+.header.header-video h1 {
   text-align: center;
 }
 
@@ -405,9 +405,9 @@ h1 {
     margin-top: 0px;
   }
 
-  .header .button {
+  /*.header .button {
   display: none;
-  }
+  }*/
 
   .main h2 {
     font-size: 2.9vw;
