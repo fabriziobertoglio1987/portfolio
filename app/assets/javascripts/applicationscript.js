@@ -12,6 +12,7 @@ var ready = function(){
 			if (window.innerWidth > 760) { navBarColor(false); } else { navBarColor(true); }
 			break;
 		case "/blog":
+		case "/contact":
 			navBarColor(true);
 			break;
 	}
