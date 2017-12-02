@@ -51,7 +51,7 @@ function scrollToParagraph(target) {
 	$('html, body').animate({scrollTop: top_position}, 'slow');
 	height = document.getElementById("bs-example-navbar-collapse-1").style.height
 	if (target == '#portfolio' && height != "1px") {
-		$("#bs-example-navbar-collapse-1").style("height: 1px");
+		$("#bs-example-navbar-collapse-1").css("height","1px");
 	}
 }
 
