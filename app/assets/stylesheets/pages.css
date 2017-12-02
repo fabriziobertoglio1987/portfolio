@@ -13,6 +13,10 @@ h1 span, p span {
   text-justify: inter-word;  
 }
 
+header.header-video h1 {
+  text-align: center;
+}
+
 /* Body */
 
 body {
@@ -362,7 +366,12 @@ h1 {
 
 @media (max-width: 820px) {
   .navbar {
-  background: white;
+    background: white;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030; 
   }
 
   .navbar-nav {
@@ -392,12 +401,43 @@ h1 {
     /*top: 48%;*/
   }
 
+  .header.header-video {
+    margin-top: 0px;
+  }
+
   .header .button {
   display: none;
   }
 
   .main h2 {
     font-size: 2.9vw;
+  }
+
+  #container-mentor {
+    display: none;
+  }
+
+  .fixed-navigation {
+    margin-top: 10px;
+  }
+
+  .container .center-image {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 780px) {
+  ul.nav.navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .black-navbar {
+    background: initial;
+    border: initial;
   }
 }
 
@@ -406,7 +446,7 @@ h1 {
     height: 450px;
   }
   video {
-  width: 660px;
+    /*width: 660px;*/
   }
   .header h1 {
     font-size: 37px;
@@ -422,8 +462,7 @@ h1 {
 
 @media (max-width: 360px) { 
   .header {
-  height: 270px;
-  width: 100%;
+    width: 100%;
   }
   .main {
     margin-top: 50px;
@@ -432,17 +471,8 @@ h1 {
     margin-top: 50px;
     height: 100px;  
   } 
-  video {
-  width: 360px;
-  }
   .header.about {
     height: 300px;
-  }
-  .header h1 {
-    /*font-size: 4vw;
-    top: 42%;
-    width: 360px;
-    padding-left: 18px;*/
   }
   .main h2 {
     font-size: 4vw;
@@ -451,10 +481,11 @@ h1 {
     font-size: 10vw;
     margin-top: 45px;
   }
+  /*.container .center a h2 {
+      display: none;
+  } */ 
 }
 
+@media (max-width: 350px) {
 
-
-/*https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9896161659413248,1,0.9904939182814604,0.91,0.6935267742536794,0.04550000000000004,1,0,0,0.004300784517331522,0,0.91,0.050000000000000044,1,0.507431722621493&swatchOrder=0,1,2,3,4
-https://pixabay.com/en/dew-field-grass-green-hd-wallpaper-1867519/
-*/
+}
