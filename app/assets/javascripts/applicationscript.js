@@ -19,9 +19,6 @@ var ready = function(){
 
 	$('#circleArrow').hover(function(){
 		$(this).effect("bounce", {times: 3}, 2000);
-		/*$(this).click(function(){
-			scrollToParagraph(".header.header-video", ".navbar.navbar-default");
-		});*/
 	});
 }
 
@@ -74,6 +71,11 @@ function url() {
 
 function animateLink(target) {
 	target.effect("bounce", "slow");
+}
+
+
+function cookieconsent() {
+
 }
 
 /* DOCUMENT READY CALL*/
