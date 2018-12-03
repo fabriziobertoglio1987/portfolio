@@ -1,0 +1,4 @@
+section.portfolio { position: absolute; top: 200%; width: 100%; text-align: center; }
+#container-mentor img { width: 100% }
+
+@media (max-width: 600px) { #container-mentor img { display: none; } } 
