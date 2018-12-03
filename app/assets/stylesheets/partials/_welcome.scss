@@ -11,16 +11,9 @@ video {
   position: absolute;
   z-index: -3;
   width: 100vw;
-  // width: 100vw;
-  //margin-top: -450px;
 }
 
-@media (max-width: 1200px) { 
-  video { 
-    width: initial;
-    height: 100vh;
-  }
-}
+@media (max-aspect-ratio: 1724/963) { video { width: initial; height: 100vh; } }
 
 .centered {
   display: flex;
@@ -63,7 +56,7 @@ video {
   color: #FF0000;
 }
 
-.centered .button:hover {
+.centered .button:hover, .navbar-nav > li:hover {
   background-color: #FF0000;
   color: #0100E8;
   border: solid 5px #0100E8;
@@ -71,4 +64,4 @@ video {
 
 /* Iframe */ 
 
-iframe { width: 100vw; height: 100vh; }
+iframe { width: 100vw; height: 100vh; position: absolute; top: 100%; }

@@ -53,15 +53,15 @@ function scrollToParagraph(target) {
 	}
 }
 
-function navBarColor(condition) {
-	if (condition) {
-		$('.navbar-nav, .navbar, .header .button').addClass("initial-background");
-		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "black");
-	} else {
-		$('.navbar-nav, .navbar, .header .button').removeClass("initial-background");
-		/*$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "#FCFFFD");*/
-	}
-}
+//function navBarColor(condition) {
+//	if (condition) {
+//		$('.navbar-nav, .navbar, .header .button').addClass("initial-background");
+//		$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "black");
+//	} else {
+//		$('.navbar-nav, .navbar, .header .button').removeClass("initial-background");
+//		/*$('.navbar.navbar-default .navbar-nav > li > a, .navbar-brand').css("color", "#FCFFFD");*/
+//	}
+//}
 
 
 function url() {
