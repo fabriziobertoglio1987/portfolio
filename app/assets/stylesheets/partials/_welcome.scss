@@ -24,6 +24,17 @@ video {
   h1 { color: #FCFFFD; font-size: 9vw; font-weight: bold; margin: 0 0; }
   h3 { color: #FCFFFD; font-size: 4vw; font-weight: bold; margin: 0 0; } 
   span { color: red; }
+  .links { 
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    .icon { width: 100px; }
+    .icon-white { color: white; }
+  }
 }
 
 .centered .button {
@@ -37,7 +48,7 @@ video {
   margin-top: 43px;
 }
 
-.cented h1:hover {
+.centered h1:hover {
   color: #FF0000;
 }
 
