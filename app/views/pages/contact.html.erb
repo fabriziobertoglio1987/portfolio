@@ -1,5 +1,8 @@
-<%= render "navigation" %>
-<div class="container fixed-navigation">
-	<h1 style="color:red;" class="center">Contact me at</h1>
-	<p style="text-align: center;">email: fabrizio.developer@gmail.com</p>
-</div>
+<%= render "navbar" %>
+<section id="video-container">   
+  <%= video_tag ["lighthouse.mp4"], autoplay: true, loop: true, muted: true, poster: "runner.png" %>
+  <div class="centered">
+    <h3> <span>Contact me at</span> fabrizio.developer@gmail.com</h3>      
+    <%= link_to "Back to my Portfolio", pages_path, {class: "button animation portfolio"} %>
+  </div>
+</section>
