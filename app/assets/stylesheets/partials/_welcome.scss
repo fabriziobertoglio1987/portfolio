@@ -13,7 +13,6 @@ video {
   width: 100vw;
 }
 
-@media (max-aspect-ratio: 1724/963) { video { width: initial; height: 100vh; } }
 
 .centered {
   display: flex;
@@ -25,12 +24,8 @@ video {
 }
 
 .centered h1 {
-  // position: relative;
-  // top: 35%;
-  // transform: translateY(-50%);
-  // text-align: center;*/
   color: #FCFFFD;
-  font-size: 7vw;
+  font-size: 9vw;
   font-weight: bold;
   margin: 0 0;
 }
@@ -45,11 +40,6 @@ video {
   font-weight: bold;
   background: transparent;
   margin-top: 43px;
-  /*position: relative;
-  top: 35%;
-  transform: translateY(-50%);
-  left: 50%;
-  transform: translateX(-50%);*/
 }
 
 .cented h1:hover {
@@ -65,3 +55,8 @@ video {
 /* Iframe */ 
 
 iframe { width: 100vw; height: 100vh; position: absolute; top: 100%; }
+
+@media (max-aspect-ratio: 1724/963) { video { width: initial; height: 100vh; } }
+@media (max-width: 360px) { 
+  .centered { h1 { display: none; }; .button { padding: 4px 17px; } }
+}

@@ -9,7 +9,7 @@ var ready = function(){
 				e.preventDefault();
 				findParagraph(this);
 			});
-			if (window.innerWidth > 760) { navBarColor(false); } else { navBarColor(true); }
+			// if (window.innerWidth > 760) { navBarColor(false); } else { navBarColor(true); }
 			break;
 		case "/blog":
 		case "/contact":
@@ -29,7 +29,6 @@ var visit = function() {
 /* FUNCTIONS */
 
 function findParagraph(input) {
-	/*console.log(input)*/
 	animation = $('.animation'); 
 	switch(input) {
 		case animation[0]:
@@ -38,7 +37,7 @@ function findParagraph(input) {
 		break
 		case $('.center.animation')[0]:
 			/*scrollToParagraph('.navbar.navbar-default')*/
-			scrollToParagraph('.header.header-video')
+			scrollToParagraph('#video-container')
 		break
 	}
 }

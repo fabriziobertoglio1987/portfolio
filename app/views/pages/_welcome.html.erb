@@ -1,9 +1,9 @@
-<div id="video-container">   
-  <%= video_tag "runner.mp4", autoplay: true, loop: true, muted: true, poster: "runner.png" %>
+<section id="video-container">   
+  <%= video_tag ["runner.webm","runner.mp4"], autoplay: true, loop: true, muted: true, poster: "runner.png" %>
   <div class="centered">
     <h1> <span>Hello!</span> I am Fabrizio</h1>      
     <%= link_to "View my Work", "#", {class: "button animation portfolio"} %>
   </div>
-</div>
+</section>
 
 <iframe src="https://www.youtube.com/embed/e-xMvhm_rXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

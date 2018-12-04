@@ -14,7 +14,9 @@
   a { color: white; height: 100%; padding: 8px 15px;}
   ul li a { color: white; }
 
-
+  background: transparent;
+  border: transparent; 
+  z-index: +1;
 }
 
 .navbar-toggle { 
@@ -31,7 +33,6 @@
 
 @media (min-width: 760px) {
   // Flexbox for li links on desktop version
-  // .navbar-collapse { height: 100% !important; } 
   .collapse.navbar-collapse ul { height: 70px; }
   .navbar-collapse ul { 
     display: flex; justify-content: flex-end; 
@@ -39,55 +40,7 @@
   }
   .navbar-nav > li { width: 16%; display: flex; justify-content: center; border: 1px solid white;} 
 }
-//.portfolio .navbar {
-//  overflow: hidden;
-//}
-//
-//.portfolio .centered {
-//  margin-top: -70px;
-//  width: 100%;
-//}
 
-//.container.image {
-//  text-align: center;
-//}
-
-//.portfolio.image {
-//  height: 600px;
-//}
-
-//.header-link {
-//  display: inline-block;
-//  margin: 0px 5px;
-//}
-
-/* Navigation Bar */
-
-//.navbar-nav {
-//  float: right;
-//  background: transparent; 
-//}
-
-.navbar {
-  background: transparent;
-  border: transparent; 
-  z-index: +1;
+@media (max-width: 360px) {
+  .navbar-brand { display: none; }
 }
-
-//.navbar-default .navbar-nav > li > a {
-//  color: #FCFFFD;
-//}
-//
-//.navbar-default .navbar-brand {
-//  color: #FCFFFD;
-//}
-//
-//.navbar-brand {
-//  font-size: 18px;
-//}
-//
-//.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
-//  background-color: #FF0000;
-//  color: #FCFFFD;
-//}
-
