@@ -1,13 +1,13 @@
 <section id="video-container">   
-  <%= video_tag ["runner.webm","runner.mp4"], autoplay: true, loop: true, muted: true, poster: "runner.png" %>
+  <%= video_tag ["runner.webm","runner.mp4"], autoplay: true, loop: true, muted: true, preload: "none", poster: "runner.png" %>
   <div class="centered">
     <h1> <span>Hello!</span> I am Fabrizio</h1>      
     <%= link_to "View my Work", "#", {class: "button animation portfolio"} %>
     <div class="links">
-      <%= fa_icon "stack-overflow", class: 'fa-5x icon-white' %>
-      <%= link_to "resume.pdf" do %><%= image_tag "resume.svg", class: 'icon' %><% end %>
+      <%= link_to "https://stackoverflow.com/users/7295772/fabrizio-bertoglio?tab=profile" do %><%= image_tag "library.svg" %><% end %>
+      <%= link_to asset_path('resume.pdf'), download:"resume.pdf" do %><%= image_tag "resume.svg", class: 'icon' %><% end %>
       <%= link_to "https://github.com/fabriziobertoglio1987" do %><%= image_tag "github-character.svg", class: 'icon' %><% end %>
-      <%= image_tag "linkedin.svg", class: 'icon' %> 
+      <%= link_to "https://de.linkedin.com/in/fabriziobertoglio/en" do %><%= image_tag "linkedin.svg", class: 'icon' %><% end %>
     </div>
   </div>
 </section>
