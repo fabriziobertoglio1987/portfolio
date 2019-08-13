@@ -1,5 +1,12 @@
 section.portfolio { position: absolute; top: 210%; width: 100%; text-align: center; }
 .header-link { vertical-align: top }
+.description { text-align: center; }
 #container-mentor img { width: 100% }
+.image, .gif-image { width: 316px; }
+.tech-icons { 
+  font-size: 60px; 
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  .simple { text-shadow: none }
+}
 
 @media (max-width: 600px) { #container-mentor img { display: none; }; .portfolio.image { width: 100%; } } 

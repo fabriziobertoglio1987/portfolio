@@ -33,7 +33,7 @@ function findParagraph(input) {
 	switch(input) {
 		case animation[0]:
 		case animation[1]:
-			scrollToParagraph('#portfolio')
+			scrollToParagraph('#surfcheck')
 		break
 		case $('.center.animation')[0]:
 			/*scrollToParagraph('.navbar.navbar-default')*/
