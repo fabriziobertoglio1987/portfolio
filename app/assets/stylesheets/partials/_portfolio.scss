@@ -1,4 +1,5 @@
 section.portfolio { position: absolute; top: 210%; width: 100%; text-align: center; }
+.header-link { vertical-align: top }
 #container-mentor img { width: 100% }
 
 @media (max-width: 600px) { #container-mentor img { display: none; }; .portfolio.image { width: 100%; } } 
