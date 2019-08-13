@@ -1,15 +1,16 @@
 default: &default
   adapter: postgresql
+  host: localhost
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: fabrizio
-  password: <%= ENV['DATABASE_PW'] %>
-  #socket: /var/run/mysqld/mysqld.sock
+  # username: fabrizio
+  # password: <%= ENV['DATABASE_PW'] %>
+  # socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  password: <%= ENV['DATABASE_PW'] %>
+  # password: <%= ENV['DATABASE_PW'] %>
   database: portfolio_development
 
 # Warning: The database defined as "test" will be erased and
@@ -23,5 +24,5 @@ production:
   <<: *default
   adapter: postgresql
   database: portfolio_production
-  username: fabrizio
-  password: <%= ENV['DATABASE_PW'] %>
+  # username: fabrizio
+  # password: <%= ENV['DATABASE_PW'] %>
