@@ -1,1 +1,1 @@
-The reposirtory for my [portfolio page](https://sprachspiel.xyz/)
+Repository for the following [portfolio page](https://sprachspiel.xyz/)
