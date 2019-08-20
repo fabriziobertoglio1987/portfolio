@@ -7,6 +7,9 @@
   overflow: hidden;
 }
 
+.btn-pres { margin-top: 10px; color: white }
+.btn-pres:hover { color: red }
+
 video {
   position: absolute;
   z-index: -3;
