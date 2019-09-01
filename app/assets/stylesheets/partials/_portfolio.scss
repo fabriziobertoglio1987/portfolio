@@ -25,4 +25,19 @@ section.portfolio { position: absolute; top: 100%; width: 100%; text-align: cent
   }
 }
 
-@media (max-width: 600px) { #container-mentor img { display: none; }; .portfolio.image { width: 100%; } } 
+.store.android {
+    height: 150px
+}
+
+.store.ios {
+    height: 100px
+}
+
+@media (max-width: 600px) { 
+  #container-mentor img { display: none; }
+  .portfolio.image { width: 100%; } 
+  .app-store-icons { margin-bottom: 20px }
+  .android { max-height: 150px }
+  .ios { max-height: 88px }
+  .store.android { width: 100%; height: initial }
+} 
