@@ -85,8 +85,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Configure CloudFront
-  config.action_controller.asset_host = ENV.fetch('PORTFOLIO_AWS_CLOUD_FRONT_URL')
-  config.action_mailer.asset_host = ENV.fetch('PORTFOLIO_AWS_CLOUD_FRONT_URL')
+  config.action_controller.asset_host = ENV['PORTFOLIO_AWS_CLOUD_FRONT_URL']
+  config.action_mailer.asset_host = ENV['PORTFOLIO_AWS_CLOUD_FRONT_URL']
 
   config.public_file_server.enabled = true
   config.assets.compile = true
